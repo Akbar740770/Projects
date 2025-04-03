@@ -1,0 +1,31 @@
+<h2 mat-dialog-title>Создать пользователя</h2>
+
+<mat-dialog-content>
+  <form [formGroup]="form">
+    
+    <mat-form-field>
+      <mat-label>Имя</mat-label>
+      <input matInput formControlName="name" required>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Email</mat-label>
+      <input matInput formControlName="email" required>
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Вебсайт</mat-label>
+      <input matInput formControlName="website">
+    </mat-form-field>
+
+    <mat-form-field>
+      <mat-label>Название компании</mat-label>
+      <input matInput formControlName="companyName">
+    </mat-form-field>
+
+<button matIconSuffix mat-raised-button (click)="submitForm()" >Создать пользователья
+        <mat-icon>add</mat-icon> 
+</button>
+
+  </form>
+</mat-dialog-content>

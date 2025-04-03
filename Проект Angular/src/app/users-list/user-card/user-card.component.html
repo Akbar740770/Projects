@@ -1,0 +1,16 @@
+
+   <p> {{user.name | UpperCasePipe}}</p>
+   <p> {{user.email}}</p>
+   <p> {{user.website}}</p>
+   <p> {{user.phone | removeDashes}}>
+   <p> {{user.company.name}}</p>
+
+   <button HoverShadow mat-raised-button (click)="openDeleteDialog()" type="button" class="header-button-users"  >Удалить пользователя</button>
+   <button HoverShadow mat-raised-button (click)="openDialog()" type="button" class="header-button-users" style="margin-top: 15px;" matTooltip="Редактировать данные пользователя" >Редактировать пользователя</button>
+
+
+
+
+
+
+   

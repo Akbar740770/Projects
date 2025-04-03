@@ -1,0 +1,41 @@
+<h1 style="display: flex; justify-content: center;">CREATE TODOS FORM</h1>
+
+<div style="font-family: Inter; display: flex; justify-content: center;">
+
+<form 
+    style="display: flex; flex-direction: column;" 
+    [formGroup]="formTodo"   
+    >
+
+
+    
+    <mat-form-field class="mat">
+        <mat-label>Текст задачи:</mat-label>
+        <input matInput formControlName="title">
+        <mat-error>Некоректный текст задачи</mat-error>
+    </mat-form-field>
+
+    
+    <mat-form-field class="mat">
+        <mat-label>Автор задачи:</mat-label>
+        <input matInput formControlName="userId">
+        <mat-error>Некоректный автор задачи</mat-error>
+    </mat-form-field>
+    
+    <mat-form-field class="mat">
+        <mat-label>Задача завершена:</mat-label>
+        <input matInput formControlName="completed">
+        <mat-error>Некоректный текст </mat-error>
+    </mat-form-field>
+
+    <button type="submit" (click)="submitFormTodo()" matIconSuffix mat-raised-button [disabled]="formTodo.invalid">Добавить Задачу
+        <mat-icon>add</mat-icon> 
+    </button>
+
+   
+
+</form>
+</div>
+
+
+  

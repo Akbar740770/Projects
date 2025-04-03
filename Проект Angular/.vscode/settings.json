@@ -1,0 +1,9 @@
+{
+    "files.autoGuessEncoding": false,
+    "workbench.activityBar.iconClickBehavior": "toggle",
+    "workbench.activityBar.location": "default",
+    "workbench.colorTheme": "Default Dark Modern",
+    "breadcrumbs.symbolPath": "on",
+    "workbench.editor.alwaysShowEditorActions": false,
+    "editor.cursorSmoothCaretAnimation": "off"
+}

@@ -1,0 +1,9 @@
+<app-create-todos-form (createtodosOuput)="createTodos($event)" ></app-create-todos-form>
+<div class="header-users">
+    <div class="header-users__items" *ngFor="let todo of TodosService.TodosSubject$ | async " >
+
+        <app-todo-card [todo]="todo" (deleteTodo)="deleteUsers ($event)"></app-todo-card>
+   
+    </div>
+
+</div>

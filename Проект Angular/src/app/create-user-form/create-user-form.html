@@ -1,0 +1,44 @@
+<h1 style="display: flex; justify-content: center;">CREATE USER FORM</h1>
+
+<div style="font-family: Inter; display: flex; justify-content: center;">
+
+<form 
+    style="display: flex; flex-direction: column;" 
+    [formGroup]="form"   
+>
+
+    <mat-form-field class="mat">
+        <mat-label>Введите имя пользователья</mat-label>
+        <input matInput formControlName="name">
+        <mat-error>Некоректное имя пользователья</mat-error>
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>Введите email</mat-label>
+        <input matInput formControlName="email">
+        <mat-error>Некоректный email</mat-error>
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>Введите website</mat-label>
+        <input matInput formControlName="website">
+        <mat-error>Некоректный website</mat-error>
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>Введите companyName </mat-label>
+        <input matInput formControlName="companyName">
+        <mat-error>Некоректный companyName</mat-error>
+    </mat-form-field>
+
+    <button (click)="submitForm()" matIconSuffix mat-raised-button [disabled]="form.invalid">Добавить пользователья
+        <mat-icon>add</mat-icon> 
+    </button>
+
+   
+
+</form>
+</div>
+
+
+  
