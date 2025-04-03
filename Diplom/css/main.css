@@ -1,0 +1,501 @@
+html,body{
+	padding: 0;
+	margin: 0;
+	/*background-color: #F2EFEF;*/
+}
+@font-face {
+    font-family: Montserrat-Black; /* Имя шрифта */
+    src: url(../font/Montserrat-Black.ttf); /* Путь к файлу со шрифтом */
+   }
+   a{
+   	text-decoration: none;
+   }
+.mainblock{
+	width: 100%;
+	height: 500px;
+}
+.head{
+	position: relative;
+ 	height: 80px;
+ 	padding: 20px;
+}
+.p{
+	float: left;
+	margin: 5px;
+}
+.menu{
+ 	width: 615px;
+ 	height: 90px;
+ 	margin: 25px auto 0 auto;
+ 	font-weight: bold;
+}
+.menu_nadpis{
+	font-family: Comfortaa;
+	font-size: 20px;
+	color: #555555;
+	text-decoration: none;
+	display: inline-block;
+}
+.menu_nadpis:hover{
+	color: black;
+	border-bottom: 1px solid black;
+}
+.center{
+
+}
+.footer{
+
+}
+.logo{
+	float: left;
+}
+.phone{
+	float: right;
+	margin-top: -105px;
+	padding-right: 50px;
+}
+
+
+#slider-wrap{ 
+    margin-top: 80px;
+}
+
+#active-slide {
+    width: 100%;
+    display: table;
+    position: relative;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+}
+#korzina{
+	background-color: red;
+	left:25px;
+}
+
+#slider{
+    position: relative;
+    width: calc(100% * 4);
+    top: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s;
+    -webkit-transition-timing-function: ease-in-out;
+    -o-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
+}
+
+.slide{
+    width: calc(100%/4);
+    list-style: none;
+    display: inline;
+    float: left;
+}
+
+.slide img {
+    width:100%;
+}
+.Radio-But{
+    margin-top:10px;
+    text-align:center;
+}
+
+.Radio-But .ctrl-select {
+    margin:2px;
+    display:inline-block;
+    width:16px;
+    height:16px;
+    overflow:hidden;
+    text-indent:-9999px;
+    background:url(radioBg.png) center bottom no-repeat;
+}
+
+.Radio-But .ctrl-select:hover {
+    cursor:pointer;
+    background-position:center center;
+}
+
+.Radio-But .ctrl-select.active {
+    background-position:center top;
+}
+
+#prewbutton, #nextbutton {
+    display:block;
+    width:40px;
+    height:100%;
+    position:absolute;
+    top:0;
+    overflow:hidden;
+    text-indent:-999px;
+    background: url("arrowBg.png") left center no-repeat;
+    opacity:0.5;
+    z-index:3;
+    outline:none !important;
+}
+
+#prewbutton {
+    left:10px;
+}
+
+#nextbutton {
+    right:10px;
+    background:url(arrowBg.png) right center no-repeat;
+}
+
+#prewbutton:hover, #nextbutton:hover {
+    opacity:1;
+}
+.menudostavki{
+	height: 500px;
+}
+.menuspisok{
+	width: 1260px;
+	margin: 40px auto;
+	height: 1110px;
+}
+.dostavkamenuhead{
+	width: 360px;
+	margin: 0 auto;
+	border-bottom: 4px solid #555555;
+	text-align: center;
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 50px;
+	font-family: 'Montserrat-Black',sans-serif;
+}
+.pizzanadis{
+	font-weight: bold;
+	text-align: center;
+	padding:15px 20px;
+	color: black;
+	font-size: 18px;
+	font-family: 'Montserrat-Black',sans-serif;
+	letter-spacing: 2px;
+	background-color: #E6E6E6;
+}
+.pizza{
+	width: 300px;
+	box-shadow: 0 0 7px grey;
+	float: left;
+}
+.pizza:hover .pizzanadis{
+	color: #479BEA;
+}
+.pizza:hover {
+	box-shadow: 0 0 0px grey;
+}
+.company{
+	width: 300px;
+	margin-left: 20px;
+	float: left;
+	box-shadow: 0 0 7px grey;
+}
+.company:hover {
+	box-shadow: 0 0 0px grey;
+}
+.company:hover .pizzanadis{
+	color: #479BEA;
+}
+.zakuski{
+	width: 300px;
+	margin-left: 20px;
+	float: left;
+	box-shadow: 0 0 7px grey;
+}
+.zakuski:hover {
+	box-shadow: 0 0 0px grey;
+}
+.zakuski:hover .pizzanadis{
+	color: #479BEA;
+}
+.salati{
+	width: 300px;
+	margin-left: 20px;
+	float: left;
+	box-shadow: 0 0 7px grey;
+}
+.salati:hover {
+	box-shadow: 0 0 0px grey;
+}
+.salati:hover .pizzanadis{
+	color: #479BEA;
+}
+.supi{
+	width: 300px;
+	margin-top: 30px;
+	float: left;
+	box-shadow: 0 0 7px grey;
+}
+.supi:hover {
+	box-shadow: 0 0 0px grey;
+}
+.supi:hover .pizzanadis{
+	color: #479BEA;
+}
+.pasta{
+	width: 300px;
+	float: left;
+	margin-top: 30px;
+	margin-left: 20px;
+	box-shadow: 0 0 7px grey;
+}
+.pasta:hover {
+	box-shadow: 0 0 0px grey;
+}
+.pasta:hover .pizzanadis{
+	color: #479BEA;
+}
+.hotgril{
+	width: 300px;
+	float: left;
+	margin-top: 30px;
+	margin-left: 20px;
+	box-shadow: 0 0 7px grey;
+}
+.hotgril:hover {
+	box-shadow: 0 0 0px grey;
+}
+.hotgril:hover .pizzanadis{
+	color: #479BEA;
+}
+.garnir{
+	width: 300px;
+	float: left;
+	margin-top: 30px;
+	margin-left: 20px;
+	box-shadow: 0 0 7px grey;
+}
+.garnir:hover {
+	box-shadow: 0 0 0px grey;
+}
+.garnir:hover .pizzanadis{
+	color: #479BEA;
+}
+.deserti{
+	width: 300px;
+	float: left;
+	margin-top: 30px;
+	box-shadow: 0 0 7px grey;
+}
+.deserti:hover {
+	box-shadow: 0 0 0px grey;
+}
+.deserti:hover .pizzanadis{
+	color: #479BEA;
+}
+.deti{
+	width: 300px;
+	float: left;
+	margin-top: 30px;
+	margin-left: 20px;
+	box-shadow: 0 0 7px grey;
+}
+.deti:hover {
+	box-shadow: 0 0 0px grey;
+}
+.deti:hover .pizzanadis{
+	color: #479BEA;
+}
+.napitki{
+	width: 300px;
+	float: left;
+	margin-top: 30px;
+	margin-left: 20px;
+	box-shadow: 0 0 7px grey;
+}
+.napitki:hover {
+	box-shadow: 0 0 0px grey;
+}
+.napitki:hover .pizzanadis{
+	color: #479BEA;
+}
+.festival{
+	width: 300px;
+	float: left;
+	margin-top: 30px;
+	margin-left: 20px;
+	box-shadow: 0 0 7px grey;
+}
+.festival:hover {
+	box-shadow: 0 0 0px grey;
+}
+.festival:hover .pizzanadis{
+	color: #479BEA;
+}
+.lanch{
+	width: 300px;
+	float: left;
+	margin-top: 30px;
+	box-shadow: 0 0 7px grey;
+}
+.lanch:hover {
+	box-shadow: 0 0 0px grey;
+}
+.lanch:hover .pizzanadis{
+	color: #479BEA;
+}
+.rekomenduem{
+	width: 360px;
+	margin: 20px auto;
+	border-bottom: 4px solid #555555;
+	text-align: center;
+	font-weight: bold;
+	font-size: 30px;
+	line-height: 50px;
+	font-family: 'Montserrat-Black',sans-serif;
+}
+.rekomenduemspisok{
+	width: 1260px;
+	margin: 40px auto;
+	height: 470px;
+}
+.antipastinadis{
+	font-weight: bold;
+	text-align: center;
+	padding:15px 20px;
+	color: #579139;
+	font-size: 22px;
+	font-family: 'Calibri',sans-serif;
+	letter-spacing: 2px;
+	background-color: #E6E6E6;
+}
+.antipasti{
+	width: 300px;
+	float: left;
+	margin-top: 30px;
+	box-shadow: 0 0 7px grey;
+}
+.antipasti:hover {
+	box-shadow: 0 0 0px grey;
+}
+.antipastitext{
+	font-size: 12.0pt;
+	font-family: Roboto, Helvetica, sans-serif;
+	line-height: 107%;
+	padding: 15px 10px;
+	color: #4D4D4D;
+	letter-spacing: 1px;
+}
+.glavantipasti{
+	font-size: 12.0pt;
+	width: 100px;
+	font-weight: bold;
+	margin: 0 auto;
+	font-family: Roboto, Helvetica, sans-serif;
+	line-height: 107%;
+	padding: 12px 10px 0 10px;
+	color: #4D4D4D;
+	letter-spacing: 1px;
+}
+.glavantipasti:hover {
+	box-shadow: 0 0 0px grey;
+}
+.paletaismasa{
+	width: 300px;
+	float: left;
+	margin-left: 20px;
+	margin-top: 30px;
+	box-shadow: 0 0 7px grey;
+}
+.paletaismasa:hover {
+	box-shadow: 0 0 0px grey;
+}
+.paletaismasatext{
+	font-size: 12.0pt;
+	font-family: Roboto, Helvetica, sans-serif;
+	line-height: 107%;
+	padding: 15px 10px 32px 10px;
+	color: #4D4D4D;
+	letter-spacing: 1px;
+}
+.glavpaletaismasa{
+	font-size: 12.0pt;
+	width: 100px;
+	font-weight: bold;
+	margin: 0 auto;
+	font-family: Roboto, Helvetica, sans-serif;
+	line-height: 107%;
+	padding: 12px 10px 0 10px;
+	color: #4D4D4D;
+	letter-spacing: 1px;
+}
+.platoizhot{
+	width: 300px;
+	float: left;
+	margin-left: 20px;
+	margin-top: 30px;
+	box-shadow: 0 0 7px grey;
+}
+.platoizhot:hover {
+	box-shadow: 0 0 0px grey;
+}
+.platoizhottext{
+	font-size: 12.0pt;
+	font-family: Roboto, Helvetica, sans-serif;
+	line-height: 107%;
+	padding: 24px 10px 32px 10px;
+	color: #4D4D4D;
+	letter-spacing: 1px;
+}
+.glavplatoizhot{
+	font-size: 12.0pt;
+	width: 244px;
+	font-weight: bold;
+	margin: 0 auto;
+	font-family: Roboto, Helvetica, sans-serif;
+	line-height: 107%;
+	padding: 20px 10px 0 10px;
+	color: #4D4D4D;
+	letter-spacing: 1px;
+}
+.platoizmore{
+	width: 300px;
+	float: left;
+	margin-left: 20px;
+	margin-top: 30px;
+	box-shadow: 0 0 7px grey;
+}
+.platoizmore:hover {
+	box-shadow: 0 0 0px grey;
+}
+.platoizmoretext{
+	font-size: 12.0pt;
+	font-family: Roboto, Helvetica, sans-serif;
+	line-height: 107%;
+	padding: 15px 10px 32px 10px;
+	color: #4D4D4D;
+	letter-spacing: 1px;
+}
+.glavplatoizmore{
+	font-size: 12.0pt;
+	width: 239px;
+	font-weight: bold;
+	margin: 0 auto;
+	font-family: Roboto, Helvetica, sans-serif;
+	line-height: 107%;
+	padding: 21px 10px 10px 10px;
+	color: #4D4D4D;
+	letter-spacing: 1px;
+}
+.lefttext{
+	width: 640px;
+	padding: 0px 30px;
+	height: 400px;
+	float: left;
+}
+.centerglavtext{
+	font-size: 22pt;
+	text-align: center;
+	font-family: Roboto, Helvetica, sans-serif;
+}
+.p111{
+	width: 610px;
+	font-size: 12pt;
+	font-family: Arial, sans-serif;
+}
